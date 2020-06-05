@@ -1,0 +1,195 @@
+@import url('//fonts.googleapis.com/css2?family=Gotu&display=swap');
+
+:root {
+    --logo-font: "Gotu" ;
+    --header-font: "Gotu", sans-serif;
+    --core-font: "Gotu", sans-serif;  
+    --primary: white;
+    --secondary: black;
+    --highlight: red;
+    --highlighty: yellow;
+    --highlightg: green;
+    --highlightmb: midnightblue; 
+    --brand: orange;
+    --ui-shawdow: 0 2px 4px -1px rgba(0, 0, 0, 0.06),
+                  0 4px 5px 0 rgba(0, 0, 0, 0.06), 0 1px 10px 0 rgba(0, 0, 0, 0.08);
+      fill: rgba(0, 0, 0, 0.54);
+    --ui-shawdow-border: 1px solid rgba(0, 0, 0, 0.14);
+    background: white;
+    color: black;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  
+}
+
+@-webkit-keyframes fontfix {
+  from { opacity: 1; }
+  to   { opacity: 1; }
+}
+
+h1 {
+  font-family: var(--header-font);
+  
+  color: var(--brand);
+}
+
+h2
+{
+    font-family: var(--header-font);
+    
+    text-align: center;
+    color: var(--brand);
+}
+
+h3 {
+  font-family: var(--header-font);
+  
+  color: var(--brand);
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+a:hover{
+  filter: invert(50%);
+}
+
+  
+.banner {
+    display: flex;  
+    width: 100%;  
+    border-radius: 0 0  5px 5px;  
+    padding: 15px;
+    position: fixed;    
+}
+
+
+.logo {
+    font-family: var(--logo-font);
+    font-size: 25px;
+    font-weight: bold;
+    color: var(--brand);
+}
+
+.menu-list {
+    display: flex;  
+    align-items: center;  
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    align-items: right;  
+    width: 100%;    
+}
+
+.menu-item{
+  padding-right: 20px;
+}
+
+
+.row-about{     
+  height: 100vh;
+  display: flex; 
+  flex: 1;  
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+  background-image: url("../images/about.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.row-icons{
+  display: flex; 
+  flex: 1;  
+  justify-content: space-evenly;  
+}
+
+.row-blank{
+  padding: 50px;
+}
+
+.sections{
+  flex: 1;
+  height: 100vh;
+}
+
+.col-title{
+    display: flex;
+    flex: 1;
+    padding-top: 50px;
+    padding-bottom: 150px;
+    padding-left: 150px;
+    padding-right: 150px;
+    flex-flow: column wrap;   
+    align-items: center;       
+}
+
+.img-span{
+  display: block;
+  flex: 1;
+}
+
+.text-box{
+  display: flex;
+  padding: 10px;
+  padding-bottom: 0;
+}
+
+.para-text-about{
+  font-family: var(--logo-font);
+  text-align: center;
+  color: var(--secondary);  
+  font-weight: bold;
+}
+
+
+.bottom{
+    display: flex;          
+    border-radius: 5px 5px 0 0;  
+    background: var(--primary);
+    padding: 15px;      
+    border-top: var(--ui-shawdow-border);
+    box-shadow: var(--ui-shawdow);
+}
+
+.copyright-text{
+    font-family: var(--header-font);
+    padding: 5px;
+    margin: 0; 
+    color: var(--secondary);  
+    width: 100%;
+}
+
+
+@media screen and (max-width: 768px) {
+  .row-about, 
+  {
+    flex-wrap: wrap;
+  }
+  
+  .col-title{
+    padding-top: 50px;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  #wwatb2 {
+    display: none;
+  }
+}
+
